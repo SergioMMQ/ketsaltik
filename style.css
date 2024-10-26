@@ -12,6 +12,31 @@ header {
     padding: 20px;
     text-align: center;
 }
+/* Estilos para el header */
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+    justify-content: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Hace que el logo sea redondo */
+    margin-right: 15px; /* Espacio entre el logo y el texto */
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 1.8em; /* Ajusta el tamaño según sea necesario */
+}
+
+.header-text p {
+    margin: 5px 0 0;
+    font-size: 1em; /* Ajusta el tamaño según sea necesario */
+}
 
 h1, h2 {
     color: #f1ca95;

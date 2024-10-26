@@ -271,3 +271,33 @@ footer a:hover {
     transform: scale(1.05); /* Aumenta ligeramente el tamaño */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
 }
+
+
+/* precio */
+.sidebar-price {
+    position: fixed;
+    left: 20px;
+    top: 45%;
+    padding: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    
+    border-radius: 20px;
+    text-align: center;
+    z-index: 1000;
+    transition: transform 0.3s ease, background-color 0.3s ease;    
+    background-color: #e99f1f; /* Color de fondo llamativo */
+    border: 2px solid #ff9900; /* Borde que resalte */
+    text-align: center; /* Centrar texto */
+    margin: 20px; /* Margen alrededor */
+}
+
+.sidebar-price p {
+    font-size: 24px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Fuente en negrita */
+    color: #333; /* Color del texto */
+    margin: 10px;
+}
+
+.sidebar-price:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}

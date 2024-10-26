@@ -39,7 +39,7 @@ header {
 }
 
 h1, h2 {
-    color: #f1ca95;
+    color: #f6be70;
 }
 
 #catalogo {
@@ -63,7 +63,7 @@ h1, h2 {
 
 .item img {
     width: 100%;
-    height: auto;
+    height: 310px;
     display: block;
 }
 
@@ -183,4 +183,91 @@ footer {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Estilo para la barra lateral de publicidad */
+.sidebar-ad {
+    position: fixed;
+    right: 20px;
+    top: 85%;
+    transform: translateY(-50%);
+    width: 250px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Estilo para el botón de cierre */
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+/* Hover del botón de cierre */
+.close-btn:hover {
+    color: #ff0000; /* Cambia a rojo al pasar el cursor */
+}
+
+/* Ajustes para el enlace */
+.sidebar-ad a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Efectos para el texto */
+.sidebar-ad p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Efecto hover para aumentar el tamaño */
+.sidebar-ad:hover {
+    transform: scale(1.05) translateY(-50%);
+    background-color: #f9f9f9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Estilo general para el contenedor del enlace */
+footer a {
+    display: block; /* Hace que el enlace ocupe todo el área del contenedor */
+    text-align: center; /* Centra el contenido */
+    padding: 15px; /* Espacio interno */
+    background-color: #18191a; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    margin: 10px auto; /* Centra el enlace y añade margen */
+    width: 300px; /* Ancho fijo */
+}
+
+/* Estilo para el texto del enlace */
+footer a p {
+    margin: 0; /* Elimina los márgenes */
+    font-size: 1.1em; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Efecto hover */
+footer a:hover {
+    background-color: #0066cc; /* Cambia el color de fondo al pasar el cursor */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
 }

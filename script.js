@@ -1,9 +1,25 @@
 // Cargar imágenes en la galería
 const images = [
+    "Diseño 0.jpg",
     "Diseño 1.jpg",
     "Diseño 2.jpg",
     "Diseño 3.jpg",
-    "Diseño 4.jpg"
+    "Diseño 4.jpg",
+    "Diseño 5.jpg",
+    "Diseño 6.jpg",
+    "Diseño 7.jpg",
+    "Diseño 8.jpg",
+    "Diseño 9.jpg",
+    "Diseño 10.jpg",
+    "Diseño 11.jpg",
+    "Diseño 12.jpg",
+    "Diseño 13.jpg",
+    "Diseño 14.jpg",
+    "Diseño 15.jpg",
+    "Diseño 16.jpg",
+    "Diseño 17.jpg",
+    "Diseño 18.jpg",
+    "Diseño 19.jpg",
 ];
 
 const galeria = document.getElementById('galeria');
@@ -50,3 +66,8 @@ document.getElementById('lightbox').onclick = function(event) {
         this.style.display = "none";
     }
 };
+
+function closeAd() {
+    document.getElementById("sidebarAd").style.display = "none";
+}
+

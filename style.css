@@ -301,3 +301,16 @@ footer a:hover {
 .sidebar-price:hover {
     transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
 }
+
+/* texto informativo*/
+
+.informacion-bodypaint {
+            width: 90%;
+            margin: 0 auto; /* Centra la sección horizontalmente */
+            padding: 20px;
+            background-color: #f4f4f4; /* Color de fondo para destacar el contenido */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+            font-family: Arial, sans-serif;
+            text-align: justify; /* Justifica el texto */
+        }

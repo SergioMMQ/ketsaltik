@@ -351,37 +351,5 @@ footer a:hover {
             text-align: justify; /* Justifica el texto */
         }
 
-        section {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            padding: 20px;
-        }
-        
-        .boton-portafolio, .boton-eventos {
-            padding: 15px 30px;
-            font-size: 18px;
-            color: #fff;
-            background: linear-gradient(45deg, #4CAF50, #81C784);
-            border-radius: 8px;
-            text-decoration: none;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .boton-portafolio:hover {
-            background: linear-gradient(45deg, #388E3C, #66BB6A);
-            transform: scale(1.05);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
-        }
-        
-        .boton-eventos {
-            background: linear-gradient(45deg, #FF7043, #FFAB91);
-        }
-        
-        .boton-eventos:hover {
-            background: linear-gradient(45deg, #E64A19, #FF7043);
-            transform: scale(1.05);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
-        }
-        
+
+    

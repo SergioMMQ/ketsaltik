@@ -17,7 +17,6 @@ header {
     display: flex;
     align-items: center;
     padding: 20px;
-    
     justify-content: center;
 }
 
@@ -27,6 +26,10 @@ header {
     border-radius: 50%;
     margin-right: 15px;
 }
+
+.header-text {
+    margin-left: 20px; /* Espacio entre el logo y el texto */
+} 
 
 .header-text h1 {
     margin: 0;
@@ -112,14 +115,34 @@ button:hover {
 }
 
 .redes-sociales {
-    margin-top: 20px;
+    text-align: left; /* Alinear texto a la izquierda */
+    margin: 20px; /* Espacio alrededor del contenedor */
+}
+
+.redes-sociales h2 {
+    font-size: 24px; /* Tamaño de la fuente para el encabezado */
+    margin-bottom: 15px; /* Espacio debajo del encabezado */
+    color: #fac384;
+    text-align: center;
 }
 
 .redes-sociales a {
-    margin: 0 10px;
+    display: flex;
     text-decoration: none;
-    color: #444;
-    font-weight: bold;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociales a:hover {
+    color: #ffae00; /* Cambia el color al pasar el mouse (puedes ajustarlo) */
+}
+
+.redes-sociales i {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
 }
 
 footer {
@@ -199,6 +222,19 @@ footer {
     text-align: center;
     z-index: 1000;
     transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.sidebar-wh {
+    position: fixed;
+    right: 10px;
+    top: 5%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+    z-index: 1000;
+}
+
+.sidebar-wh a img{
+    width: 45px;
 }
 
 /* Estilo para el botón de cierre */

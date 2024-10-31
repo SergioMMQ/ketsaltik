@@ -13,7 +13,6 @@ header {
     text-align: center;
 }
 
-/* Estilos para el header */
 .header-content {
     display: flex;
     align-items: center;
@@ -30,187 +29,69 @@ header {
 }
 
 .header-text {
-    margin-left: 20px; /* Espacio entre el logo y el texto */
+    margin-left: 20px; 
 } 
 
 .header-text h1 {
     margin: 0;
-    font-size: 1.8em; /* Ajusta el tamaño según sea necesario */
+    font-size: 1.8em; 
 }
 
 .header-text p {
     margin: 5px 0 0;
-    font-size: 1em; /* Ajusta el tamaño según sea necesario */
+    font-size: 1em; 
 }
 
 h1, h2 {
     color: #07b3ec;
 }
 
-#catalogo {
-    padding: 20px;
-    text-align: center;
-}
-
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.item {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.item img {
-    width: 100%;
-    height: 310px;
-    display: block;
-}
-
-.item p {
-    padding: 10px;
-    text-align: center;
-}
-
 #contacto {
-    background-color: #b9b7b7;
+    background-color: #fce9df;
     padding: 20px;
     text-align: center;
-}
-
-form {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-    text-align: left;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-button {
-    background-color: #444;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #333;
 }
 
 .redes-sociales {
-    text-align: left; /* Alinear texto a la izquierda */
-    margin: 20px; /* Espacio alrededor del contenedor */
+    display: contents;
+    text-align: left; 
+    margin: 5px; 
 }
 
-.redes-sociales h2 {
-    font-size: 24px; /* Tamaño de la fuente para el encabezado */
-    margin-bottom: 15px; /* Espacio debajo del encabezado */
-    color: #fac384;
+.contacto h2 {
+    font-size: 24px; 
+    color: #07b3ec;
     text-align: center;
 }
 
 .redes-sociales a {
-    display: flex;
     text-decoration: none;
     color: #000;
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     transition: color 0.3s;
-    justify-content: center;
-    align-items: center;
 }
 
 .redes-sociales a:hover {
-    color: #ffae00; /* Cambia el color al pasar el mouse (puedes ajustarlo) */
+    color: #07b3ec;
 }
 
 .redes-sociales i {
-    margin-right: 10px; /* Espacio entre el icono y el texto */
+    margin-right: 10px;
+}
+
+.enlace{
+    display: grid;
+    justify-items: center;
 }
 
 footer {
-    background-color: #333;
+    background-color: #f9c4a8;
     color: #fff;
     text-align: center;
     padding: 10px;
 }
 
-
-/* Estilos para la galería */
-/* .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-} */
-
-.item img {
-    /* width: 150px;
-    height: 150px; */
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.item img:hover {
-    transform: scale(1.05);
-}
-
-/* Estilos para el lightbox */
-.lightbox {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.9);
-}
-
-.lightbox-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-.close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Estilo para la barra lateral de publicidad */
 .sidebar-ad {
     position: fixed;
     right: 20px;
@@ -226,20 +107,6 @@ footer {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.sidebar-wh {
-    position: fixed;
-    right: 10px;
-    top: 5%;
-    transform: translateY(-50%);
-    border-radius: 50px;
-    z-index: 1000;
-}
-
-.sidebar-wh a img{
-    width: 45px;
-}
-
-/* Estilo para el botón de cierre */
 .close-btn {
     position: absolute;
     top: 5px;
@@ -254,136 +121,107 @@ footer {
     transition: color 0.3s ease;
 }
 
-/* Hover del botón de cierre */
 .close-btn:hover {
-    color: #ff0000; /* Cambia a rojo al pasar el cursor */
+    color: #ff0000;
 }
 
-/* Ajustes para el enlace */
 .sidebar-ad a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
 
-/* Efectos para el texto */
 .sidebar-ad p {
     font-size: 1em;
     margin: 0;
 }
 
-/* Efecto hover para aumentar el tamaño */
 .sidebar-ad:hover {
     transform: scale(1.05) translateY(-50%);
     background-color: #f9f9f9;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-
-
-/* Estilo general para el contenedor del enlace */
-footer a {
-    display: block; /* Hace que el enlace ocupe todo el área del contenedor */
-    text-align: center; /* Centra el contenido */
-    padding: 15px; /* Espacio interno */
-    background-color: #18191a; /* Color de fondo */
-    color: #ffffff; /* Color del texto */
-    border-radius: 8px; /* Bordes redondeados */
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
-    margin: 10px auto; /* Centra el enlace y añade margen */
-    width: 300px; /* Ancho fijo */
-}
-
-/* Estilo para el texto del enlace */
-footer a p {
-    margin: 0; /* Elimina los márgenes */
-    font-size: 1.1em; /* Tamaño de fuente */
-    font-weight: bold; /* Texto en negrita */
-}
-
-/* Efecto hover */
-footer a:hover {
-    background-color: #0066cc; /* Cambia el color de fondo al pasar el cursor */
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
-}
-
-
-/* precio */
-.sidebar-price {
+.sidebar-wh {
     position: fixed;
-    left: 20px;
-    top: 45%;
-    padding: 5px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    
-    border-radius: 20px;
-    text-align: center;
+    right: 10px;
+    top: 5%;
+    transform: translateY(-50%);
+    border-radius: 50px;
     z-index: 1000;
-    transition: transform 0.3s ease, background-color 0.3s ease;    
-    background-color: #e99f1f; /* Color de fondo llamativo */
-    border: 2px solid #ff9900; /* Borde que resalte */
-    text-align: center; /* Centrar texto */
-    margin: 20px; /* Margen alrededor */
 }
 
-.sidebar-price p {
-    font-size: 24px; /* Tamaño de fuente grande */
-    font-weight: bold; /* Fuente en negrita */
-    color: #333; /* Color del texto */
-    margin: 10px;
+.sidebar-wh a img{
+    width: 45px;
 }
 
-.sidebar-price:hover {
-    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+footer a {
+    display: block; 
+    text-align: center; 
+    padding: 15px; 
+    background-color: #0286f2; 
+    color: #ffffff; 
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px auto;
+    width: 300px;
 }
 
-/* texto informativo*/
+footer a p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+footer a:hover {
+    background-color: #0066cc; 
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
 
 .informacion-bodypaint {
-            width: 90%;
-            margin: 0 auto; /* Centra la sección horizontalmente */
-            padding: 20px;
-            background-color: #f4f4f4; /* Color de fondo para destacar el contenido */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-            font-family: Arial, sans-serif;
-            text-align: justify; /* Justifica el texto */
-        }
+    width: 90%;
+    margin: 30px auto; 
+    padding: 30px;
+    background-color: #f4f4f4; 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+    font-family: Arial, sans-serif;
+    text-align: justify;
+}
 
-        section {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            padding: 20px;
-        }
-        
-        .boton-portafolio, .boton-eventos {
-            padding: 15px 30px;
-            font-size: 18px;
-            color: #fff;
-            background: linear-gradient(45deg, #4CAF50, #81C784);
-            border-radius: 8px;
-            text-decoration: none;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .boton-portafolio:hover {
-            background: linear-gradient(45deg, #388E3C, #66BB6A);
-            transform: scale(1.05);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
-        }
-        
-        .boton-eventos {
-            background: linear-gradient(45deg, #FF7043, #FFAB91);
-        }
-        
-        .boton-eventos:hover {
-            background: linear-gradient(45deg, #E64A19, #FF7043);
-            transform: scale(1.05);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
-        }
-        
+section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}    
+
+.boton-portafolio, .boton-eventos {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(45deg, #f74bdd, #f4a6e9);
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.boton-portafolio:hover {
+    background: linear-gradient(45deg, #fc34de, #f28be4);
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.boton-eventos {
+    background: linear-gradient(45deg, #f78360, #f7b8a5);
+}
+
+.boton-eventos:hover {
+    background: linear-gradient(45deg, #e9592d, #fc7e58);
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}        

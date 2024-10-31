@@ -7,17 +7,19 @@ body, html {
 }
 
 header {
-    background-color: #0f0f0f;
-    color: #fff;
+    background-color: #f9c4a8;
+    color: #000000;
     padding: 20px;
     text-align: center;
 }
+
 /* Estilos para el header */
 .header-content {
     display: flex;
     align-items: center;
     padding: 20px;
     justify-content: center;
+    color: #000;
 }
 
 .logo {
@@ -42,7 +44,7 @@ header {
 }
 
 h1, h2 {
-    color: #f6be70;
+    color: #07b3ec;
 }
 
 #catalogo {

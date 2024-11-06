@@ -6,6 +6,11 @@ body, html {
     color: #151515;
 }
 
+.footer{
+    width: 100% !important;
+    height: 420px !important;
+}
+
 header {
     background-color: #0f0f0f;
     color: #fff;

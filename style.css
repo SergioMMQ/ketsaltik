@@ -53,9 +53,9 @@ h1, h2 {
 }
 
 .redes-sociales {
-    display: contents;
-    text-align: left; 
-    margin: 5px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contacto h2 {
@@ -89,6 +89,7 @@ h1, h2 {
 .enlace{
     display: grid;
     justify-items: center;
+    padding: 5px;
 }
 
 footer {

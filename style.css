@@ -222,4 +222,6 @@ section {
     .informacion-bodypaint{
         padding: 15px;
     }
-}
+    footer a {
+        width: 100px;
+    }

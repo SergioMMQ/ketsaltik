@@ -72,6 +72,12 @@ h1, h2 {
     transition: color 0.3s;
 }
 
+#redes{
+    background-color: #fce9df;
+    padding: 20px;
+    text-align: center;
+}
+
 .redes-sociales a:hover {
     color: #07b3ec;
 }
@@ -183,7 +189,7 @@ footer a:hover {
 
 .informacion-bodypaint {
     width: 90%;
-    margin: 30px auto; 
+    margin: 10px auto; 
     padding: 30px;
     background-color: #f4f4f4; 
     border-radius: 10px;
@@ -225,3 +231,22 @@ section {
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
 }        
+
+@media (max-width: 610px){
+    #redes{
+    display: flex;
+    flex-direction: column;
+    }
+    #contacto{
+        padding: 0;
+    }
+    #redes{
+        padding: 0;
+    }
+    section{
+        gap: 5;
+    }
+    .informacion-bodypaint{
+        padding: 15px;
+    }
+}

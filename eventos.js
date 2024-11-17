@@ -28,7 +28,7 @@ images.forEach(image => {
     
     // Asigna la imagen de fondo al div
     item.style.minWidth = '200px'; // Ancho mínimo de 200px
-    item.style.height = '250px'; // Altura del div
+    item.style.height = '30px'; // Altura del div
     item.style.backgroundImage = `url('imgeventos/${image}')`;
     item.style.backgroundSize = 'cover';
     item.style.backgroundPosition = 'center';

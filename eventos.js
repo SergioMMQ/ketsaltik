@@ -27,7 +27,7 @@ images.forEach(image => {
     item.classList.add('item');
     
     // Asigna la imagen de fondo al div
-    item.style.minWidth = '200px'; // Ancho mínimo de 200px
+    item.style.minWidth = '250px'; // Ancho mínimo de 200px
     item.style.height = '350px'; // Altura del div
     item.style.backgroundImage = `url('imgeventos/${image}')`;
     item.style.backgroundSize = 'cover';

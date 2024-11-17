@@ -1,7 +1,7 @@
 // Cargar imágenes en la galería
 const images = [
     "Diseño 0.jpg",
-    "Diseño 1.png",
+    "Diseño 1.jpg",
     "Diseño 2.jpg",
     "Diseño 3.jpg",
     "Diseño 4.jpg",
@@ -65,28 +65,60 @@ const images = [
     "Diseño 62.jpg",
 ];
 
+
 const galeria = document.getElementById('galeria');
 
 images.forEach(image => {
     const item = document.createElement('div');
     item.classList.add('item');
     
-    const img = document.createElement('img');
-    img.src = `img/${image}`;
-    img.alt = image.split('.')[0].replace('-', ' ');
+    // Asigna la imagen de fondo al div
+    item.style.minWidth = '250px'; // Ancho mínimo de 200px
+    item.style.height = '250px'; // Altura del div
+    item.style.backgroundImage = `url('img/${image}')`;
+    item.style.backgroundSize = 'cover';
+    item.style.backgroundPosition = 'center';
+    item.style.paddingTop = '0'; // Espacio en blanco en la parte superior
+    item.style.boxSizing = 'border-box'; // Asegura que el padding no afecte la altura total
     
-    // Evento para abrir el lightbox al hacer clic en la imagen
-    img.onclick = function() {
-        openLightbox(this.src, this.alt);
+    // Maneja el evento de clic para abrir el lightbox
+    item.onclick = function() {
+        openLightbox(`img/${image}`, image.split('.')[0].replace('-', ' '));
     };
     
+    // Crear un párrafo con la descripción de la imagen
     const p = document.createElement('p');
-    p.textContent = img.alt;
-
-    item.appendChild(img);
+    p.textContent = image.split('.')[0].replace('-', ' ');
+    p.style.backgroundColor = '#ffffff61';
+    
+    // Agrega el párrafo al div item
     item.appendChild(p);
+    
+    // Agrega el item al contenedor de la galería
     galeria.appendChild(item);
 });
+
+// const galeria = document.getElementById('galeria');
+
+// images.forEach(image => {
+//     const item = document.createElement('div');
+//     item.classList.add('item');
+    
+//     const img = document.createElement('img');
+//     img.src = `imgeventos/${image}`;
+//     img.alt = image.split('.')[0].replace('-', ' ');
+    
+//     img.onclick = function() {
+//         openLightbox(this.src, this.alt);
+//     };
+    
+//     const p = document.createElement('p');
+//     p.textContent = img.alt;
+
+//     item.appendChild(img);
+//     item.appendChild(p);
+//     galeria.appendChild(item);
+// });
 
 // Función para abrir el lightbox
 function openLightbox(src, alt) {

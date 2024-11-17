@@ -74,6 +74,7 @@ images.forEach(image => {
     
     // Asigna la imagen de fondo al div
     item.style.minWidth = '250px'; // Ancho mínimo de 200px
+    item.style.maxWidth = '350px'; // Ancho maximo de 350px
     item.style.height = '350px'; // Altura del div
     item.style.backgroundImage = `url('img/${image}')`;
     item.style.backgroundSize = 'cover';

@@ -212,7 +212,54 @@ section {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
 }        
 
-
+/* bodypaint */
+.boton-bodypaint {
+    background: linear-gradient(45deg, #60f768, #a5f7ad);
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.boton-bodypaint:hover {
+    background: linear-gradient(45deg, #4fe92d, #66fc58);
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+/* onestrok */
+.boton-onestrok {
+    background: linear-gradient(45deg, #606df7, #a5f7f7);
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.boton-onestrok:hover {
+    background: linear-gradient(45deg, #3d2de9, #58defc);
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}  
+/* bellypaint */
+.boton-bellypaint {
+    background: linear-gradient(45deg, #f760bd, #f7a5f2);
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.boton-bellypaint:hover {
+    background: linear-gradient(45deg, #e92dcd, #fc58f1);
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}  
 @media (max-width: 610px){
     #redes{
     display: flex;

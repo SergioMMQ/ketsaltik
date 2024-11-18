@@ -1,0 +1,498 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #151515;
+}
+
+/* CSS */
+/* Estilos del botón "Inicio" */
+.back-to-home {
+    
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white;
+    padding: 10px 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.back-to-home:hover {
+    background-color: #0056b3; /* Color al pasar el cursor sobre el botón */
+}
+
+
+.footer{
+    width: 100% !important;
+    height: 175px !important;
+}
+
+header {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 80px;
+    text-align: center;
+}
+/* Estilos para el header */
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.header-text {
+    margin-left: 20px; /* Espacio entre el logo y el texto */
+} 
+
+.header-text h1 {
+    margin: 0;
+    font-size: 1.8em; /* Ajusta el tamaño según sea necesario */
+}
+
+.header-text p {
+    margin: 5px 0 0;
+    font-size: 1em; /* Ajusta el tamaño según sea necesario */
+}
+
+h1, h2 {
+    color: #f6be70;
+    text-align: center;
+}
+
+#catalogo {
+    padding: 20px;
+    text-align: center;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.galeria div{
+    width: 250px;
+    height: 250px;
+    background: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.galeria div{
+    width: 250px;
+    height: 250px;
+    background: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+.galeria div p{
+    background-color: #ffffff5d;
+    color: #ffffff;
+    text-transform:capitalize;
+    font-size: 21px;
+}
+
+/* Estilos para la pantalla completa */
+.fullscreen-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.fullscreen-container img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.navbar {
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 1000; /* Asegura que esté encima del contenido */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+
+.menu-links {
+    display: flex;
+    gap: 15px;
+}
+
+.menu-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.menu-links a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Icono del menú responsivo para dispositivos móviles */
+.menu-icon {
+    display: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.item img {
+    width: 100%;
+    height: 310px;
+    display: block;
+}
+
+.item p {
+    padding: 10px;
+    text-align: center;
+}
+
+#contacto {
+    background-color: #b9b7b7;
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.redes-sociales {
+    text-align: left; /* Alinear texto a la izquierda */
+    margin: 20px; /* Espacio alrededor del contenedor */
+}
+
+.redes-sociales h2 {
+    font-size: 24px; /* Tamaño de la fuente para el encabezado */
+    margin-bottom: 15px; /* Espacio debajo del encabezado */
+    color: #fac384;
+    text-align: center;
+}
+
+.redes-sociales a {
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociales a:hover {
+    color: #ffae00; /* Cambia el color al pasar el mouse (puedes ajustarlo) */
+}
+
+.redes-sociales i {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Estilos para la galería */
+/* .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+} */
+
+.item img {
+    /* width: 150px;
+    height: 150px; */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.item img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para el lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo para la barra lateral de publicidad */
+.sidebar-ad {
+    position: fixed;
+    right: 20px;
+    top: 85%;
+    transform: translateY(-50%);
+    width: 250px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.sidebar-wh {
+    position: fixed;
+    right: 10px;
+    top: 5%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+    z-index: 1000;
+}
+
+.sidebar-wh a img{
+    width: 45px;
+}
+
+/* Estilo para el botón de cierre */
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+/* Hover del botón de cierre */
+.close-btn:hover {
+    color: #ff0000; /* Cambia a rojo al pasar el cursor */
+}
+
+/* Ajustes para el enlace */
+.sidebar-ad a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Efectos para el texto */
+.sidebar-ad p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Efecto hover para aumentar el tamaño */
+.sidebar-ad:hover {
+    transform: scale(1.05) translateY(-50%);
+    background-color: #f9f9f9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Estilo general para el contenedor del enlace */
+footer a {
+    display: block; /* Hace que el enlace ocupe todo el área del contenedor */
+    text-align: center; /* Centra el contenido */
+    padding: 15px; /* Espacio interno */
+    background-color: #18191a; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    margin: 10px auto; /* Centra el enlace y añade margen */
+    width: 300px; /* Ancho fijo */
+}
+
+/* Estilo para el texto del enlace */
+footer a p {
+    margin: 0; /* Elimina los márgenes */
+    font-size: 1.1em; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Efecto hover */
+footer a:hover {
+    background-color: #0066cc; /* Cambia el color de fondo al pasar el cursor */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+
+/* precio */
+.sidebar-price {
+    position: fixed;
+    left: 20px;
+    top: 45%;
+    padding: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    
+    border-radius: 20px;
+    text-align: center;
+    z-index: 1000;
+    transition: transform 0.3s ease, background-color 0.3s ease;    
+    background-color: #e99f1f; /* Color de fondo llamativo */
+    border: 2px solid #ff9900; /* Borde que resalte */
+    text-align: center; /* Centrar texto */
+    margin: 20px; /* Margen alrededor */
+}
+
+.sidebar-price p {
+    font-size: 24px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Fuente en negrita */
+    color: #333; /* Color del texto */
+    margin: 10px;
+}
+
+.sidebar-price:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+/* texto informativo*/
+
+.informacion-bodypaint {
+    width: 90%;
+    margin: 0 auto; /* Centra la sección horizontalmente */
+    padding: 20px;
+    background-color: #f4f4f4; /* Color de fondo para destacar el contenido */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    font-family: Arial, sans-serif;
+    text-align: justify; /* Justifica el texto */
+}
+
+@media (max-width: 768px) {
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    .menu-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: inline-block;
+        padding-left: 30px;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+}

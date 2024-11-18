@@ -100,7 +100,7 @@ h1, h2 {
 
 
 .galeria div p{
-    background-color: #ffffff5d;
+    background-color: #6462627a;
     color: #ffffff;
     text-transform:capitalize;
     font-size: 21px;
@@ -277,14 +277,6 @@ footer {
     text-align: center;
     padding: 10px;
 }
-
-
-/* Estilos para la galería */
-/* .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-} */
 
 .item img {
     /* width: 150px;

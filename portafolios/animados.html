@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANIMADOS</title>
     <link rel="stylesheet" href="eventos.css">
-    <link type="image/x-icon" rel="shortcut icon" href="img/icon.jpg">
+    <link type="image/x-icon" rel="shortcut icon" href="../img/icon.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -17,12 +17,20 @@
             </a>
             <div class="header-text">
                 <h1>Ketsaltik</h1>
-                <h2>Catálogo de Diseños</h2>
-                <p>Descubre diseños únicos y originales para Animados.</p>
+                <h2>Catálogo de Diseños Animados</h2>
             </div>
         </div>
     </header>
     
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()" >&#9776;</div>
+        <div class="menu-links">
+            <a href="#super-heroes">SUPER HEROES</a>
+            <a href="#abstracto">ABSTRACTOS</a>
+            <a href="../index.html" class="back-to-home">INICIO</a>
+        </div>
+    </nav>
+
     <section class="informacion-bodypaint">
         <details>
             <summary>¿Por qué usamos pintura de bodypaint?</summary>
@@ -36,60 +44,30 @@
         
     </section>
     <!-- Sección de Catálogo -->
-    
-    <h2>Nuestros Diseños</h2>
     <section id="catalogo">
-        <h3>ANIMADOS</h3>
+        <h2 id="super-heroes">SUPER HEROES</h2>
         <div class="galeria" id="galeria">
-            <div style="background-image: url(../img/animados/Diseño0.jpg);"><p>Diseño1</p></div>
-            <div style="background-image: url(../img/animados/Diseño1.jpg);"><p>Diseño2</p></div>
-            <div style="background-image: url(../img/animados/Diseño2.jpg);"><p>Diseño3</p></div>
-            <div style="background-image: url(../img/animados/Diseño3.jpg);"><p>Diseño4</p></div>
-            <div style="background-image: url(../img/animados/Diseño4.jpg);"><p>Diseño5</p></div>
+            <div onclick="showImage('../img/animados/heroes/Diseño0.jpg')" style="background-image: url('../img/animados/heroes/Diseño0.jpg');"><p>Diseño 0</p></div>
+            <div onclick="showImage('../img/animados/heroes/Diseño1.jpg')" style="background-image: url('../img/animados/heroes/Diseño1.jpg');"><p>Diseño 1</p></div>
         </div>
-        <!-- <h3>CATRINAS GLAM</h3>
+        <h2 id="abstracto">ABSTRACTO</h2>
         <div class="galeria" id="galeria">
-            <div style="background-image: url(../img/catrina/glam/Diseño0.jpg);"><p>Diseño 0</p></div>
-            <div style="background-image: url(../img/catrina/glam/Diseño1.jpg);"><p>Diseño 1</p></div>
-            <div style="background-image: url(../img/catrina/glam/Diseño2.jpg);"><p>Diseño 2</p></div>
-            <div style="background-image: url(../img/catrina/glam/Diseño3.jpg);"><p>Diseño 3</p></div>
-            <div style="background-image: url(../img/catrina/glam/Diseño4.jpg);"><p>Diseño 4</p></div>
-        </div> -->
-        <!-- <h3>CATRINES</h3>
+            <div onclick="showImage('../img/animados/abstractos/Diseño0.jpg')" style="background-image: url('../img/animados/abstractos/Diseño0.jpg');"><p>Diseño 0</p></div>
+            <div onclick="showImage('../img/animados/abstractos/Diseño1.jpg')" style="background-image: url('../img/animados/abstractos/Diseño1.jpg');"><p>Diseño 1</p></div>
+        </div>
+        <h2 id="abstracto">ANIMALES</h2>
         <div class="galeria" id="galeria">
-            <div style="background-image: url(../img/catrina/catrin/Diseño0.jpg);"><p>Diseño 0</p></div>
-            <div style="background-image: url(../img/catrina/catrin/Diseño1.jpg);"><p>Diseño 1</p></div>
-            <div style="background-image: url(../img/catrina/catrin/Diseño2.jpg);"><p>Diseño 2</p></div>
-            <div style="background-image: url(../img/catrina/catrin/Diseño3.jpg);"><p>Diseño 3</p></div>
-            <div style="background-image: url(../img/catrina/catrin/Diseño4.jpg);"><p>Diseño 4</p></div>
-        </div> -->
-        <!-- <h3>CRANEOS</h3>
-        <div class="galeria" id="galeria">
-            <div style="background-image: url(../img/craneo/Diseño0.jpg);"><p>Diseño 0</p></div>
-            <div style="background-image: url(../img/craneo/Diseño1.jpg);"><p>Diseño 1</p></div>
-            <div style="background-image: url(../img/craneo/Diseño2.jpg);"><p>Diseño 2</p></div>
-            <div style="background-image: url(../img/craneo/Diseño3.jpg);"><p>Diseño 3</p></div>
-            <div style="background-image: url(../img/craneo/Diseño4.jpg);"><p>Diseño 4</p></div>
-            <div style="background-image: url(../img/craneo/Diseño5.jpg);"><p>Diseño 5</p></div>
-            <div style="background-image: url(../img/craneo/Diseño6.jpg);"><p>Diseño 6</p></div>
-            <div style="background-image: url(../img/craneo/Diseño7.jpg);"><p>Diseño 7</p></div>
-            <div style="background-image: url(../img/craneo/Diseño8.jpg);"><p>Diseño 8</p></div>
-            <div style="background-image: url(../img/craneo/Diseño9.jpg);"><p>Diseño 9</p></div>
-            <div style="background-image: url(../img/craneo/Diseño10.jpg);"><p>Diseño 10</p></div>
-            <div style="background-image: url(../img/craneo/Diseño11.jpg);"><p>Diseño 11</p></div>
-            <div style="background-image: url(../img/craneo/Diseño12.jpg);"><p>Diseño 12</p></div>
-            <div style="background-image: url(../img/craneo/Diseño13.jpg);"><p>Diseño 13</p></div>
-            <div style="background-image: url(../img/craneo/Diseño14.jpg);"><p>Diseño 14</p></div>
-        </div> -->
-        <!-- <h3>OTROS</h3>
-        <div class="galeria" id="galeria">
-            <div style="background-image: url(../img/otros/Diseño0.jpg);"><p>Diseño 0</p></div>
-        </div> -->
+            <div onclick="showImage('../img/animados/animales/Diseño0.jpg')" style="background-image: url('../img/animados/animales/Diseño0.jpg');"><p>Diseño 0</p></div>
+            <div onclick="showImage('../img/animados/animales/Diseño1.jpg')" style="background-image: url('../img/animados/animales/Diseño1.jpg');"><p>Diseño 1</p></div>
+        </div>
     </section>
 
     <!--  -->
 
-
+    <!-- Contenedor para mostrar la imagen en pantalla completa -->
+    <div id="fullscreenContainer" class="fullscreen-container" onclick="closeFullscreen()">
+        <img id="fullscreenImage" src="" alt="Fullscreen Image">
+    </div>
 
     <div class="sidebar-ad" id="sidebarAd">
         <button class="close-btn" onclick="closeAd()">× </button>
@@ -154,6 +132,6 @@
 
     <iframe class="footer" src="../footer.html" frameborder="0"></iframe>
     
-    <script src="portafolio.js"></script>
+    <script src="eventos.js"></script>
 </body>
 </html>

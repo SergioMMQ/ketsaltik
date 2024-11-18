@@ -6,9 +6,8 @@ body, html {
     color: #151515;
 }
 
-.footer{
-    width: 100% !important;
-    height: 175px !important;
+h1, h2 {
+    color: #07b3ec;
 }
 
 header {
@@ -26,13 +25,6 @@ header {
     color: #000;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
 .header-text {
     margin-left: 20px; 
 } 
@@ -47,8 +39,16 @@ header {
     font-size: 1em; 
 }
 
-h1, h2 {
-    color: #07b3ec;
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.footer{
+    width: 100% !important;
+    height: 175px !important;
 }
 
 #contacto {
@@ -57,16 +57,16 @@ h1, h2 {
     text-align: center;
 }
 
-.redes-sociales {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .contacto h2 {
     font-size: 24px; 
     color: #07b3ec;
     text-align: center;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .redes-sociales a {
@@ -177,7 +177,7 @@ section {
     justify-content: center;
     padding: 20px;
 }    
-
+/* boton muertos */
 .boton-muertos {
     padding: 15px 30px;
     font-size: 18px;
@@ -187,9 +187,7 @@ section {
     text-decoration: none;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
-    
 }
-
 
 .boton-muertos:hover {
     background: linear-gradient(45deg, #fa9601, #f58402);
@@ -197,7 +195,8 @@ section {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
 }
 
-.boton-eventos {
+/* animados */
+.boton-animados {
     background: linear-gradient(45deg, #f78360, #f7b8a5);
     padding: 15px 30px;
     font-size: 18px;
@@ -207,7 +206,7 @@ section {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
 }
-.boton-eventos:hover {
+.boton-animados:hover {
     background: linear-gradient(45deg, #e9592d, #fc7e58);
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);

@@ -260,6 +260,66 @@ section {
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
 }  
+
+/* eventos */
+.boton-eventos {
+    background: linear-gradient(45deg, #ffffff, #888888);
+    text-align: center;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 160px;
+    height: 160px;
+}
+.boton-eventos:hover {
+    background: linear-gradient(45deg, #5e5e5e, #110610);
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    opacity: .8;
+}  
+.contenedor{
+    display: flex;
+}
+.pincel{
+    display: flex;
+    width: 20px;
+    height: 100px;
+    background-color: rgb(128, 67, 67);
+    border-radius: 50px 50px 0px 0px;
+    border: 2px solid black ;
+}
+.brocha{
+    --size: 20px;
+    --half-size: calc(var(--size) / 2);
+    --gradient: linear-gradient(indigo, hotpink);
+    width: 20px;
+    height: 20px;
+    background: var(--gradient);
+    border-radius: 50% 50% / var(--half-size) var(--half-size) 0 0;
+    border: 2px solid black ;
+    
+}
+.contenedor-dibujo{
+    text-align: center;
+    display: flex;
+    width: 130px;
+    height: 130px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.dibujo{
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #8a01fa, #f8c994);
+    border: 2px solid black ;
+    border-radius: 10px;
+    position: relative;
+}
+
 @media (max-width: 610px){
     #redes{
     display: flex;

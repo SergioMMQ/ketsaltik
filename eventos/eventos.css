@@ -64,6 +64,10 @@ h1, h2 {
     text-align: center;
 }
 
+.mapa{ 
+    min-width: -webkit-fill-available;
+}
+
 /* Espaciado para que el contenido no quede debajo de la barra de navegación fija */
 section h2 {
     padding-top: 80px; /* Ajustar según la altura de la navbar */

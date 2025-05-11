@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f4;
+    color: #333;
+}
+
+/* Encabezado del blog */
+.blog-header {
+    background-color: #eecdbb;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.blog-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #412f0a;
+}
+
+.blog-header .subtitulo {
+    font-size: 1rem;
+    color: #18045f;
+    margin-top: 0.5rem;
+}
+
+/* Contenido principal */
+.blog-contenido, .entrada-detalle {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Estilo de entradas del index */
+.entrada-blog {
+    background-color: #ffffff;
+    border-left: 5px solid #f9c4a8;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.entrada-blog h2 {
+    margin-top: 0;
+    color: #07b3ec;
+}
+
+.entrada-blog time {
+    font-size: 0.9rem;
+    color: #888;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.leer-mas {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #61b1ab;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.leer-mas:hover {
+    background-color: #4d9d97;
+}
+
+/* Estilo para entradas individuales */
+.entrada-detalle h2 {
+    color: #07b3ec;
+    margin-top: 0;
+}
+
+.entrada-detalle time {
+    font-size: 0.9rem;
+    color: #888;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.entrada-detalle p {
+    margin-bottom: 1.2rem;
+}
+
+/* Pie de página */
+.regresar {
+    text-align: center;
+    padding: 2rem;
+}
+
+.icono-regreso {
+    text-decoration: none;
+    color: #cc0066;
+    font-size: 1rem;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.icono-regreso:hover {
+    opacity: 1;
+}

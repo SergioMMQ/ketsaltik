@@ -407,6 +407,11 @@ section {
 }
 
 @media (max-width: 768px) {
+    .botones-categorias {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
     section {
         flex-direction: column; /* Los elementos se apilan en una sola columna en pantallas pequeñas */
         align-items: center; /* Centra los elementos dentro de la columna */

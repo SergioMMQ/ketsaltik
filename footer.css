@@ -80,6 +80,48 @@ footer a:hover {
     padding: 5px;
 }
 
+/* Estilos generales para los enlaces */
+section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centrar los enlaces */
+    gap: 20px; /* Espaciado entre los enlaces */
+  }
+  
+  section ul li {
+    font-size: 16px; /* Tamaño de fuente */
+    font-family: Arial, sans-serif;
+  }
+  
+  section ul li a {
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    color: #333; /* Color gris oscuro */
+    padding: 10px 15px;
+    background-color: #f4f4f486; /* Fondo gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el hover */
+  }
+  
+  section ul li a:hover {
+    background-color: #fc8439; /* Color de fondo azul al pasar el ratón */
+    color: #fff; /* Cambiar color de texto a blanco al pasar el ratón */
+  }
+  
+  /* Para dispositivos pequeños */
+  @media (max-width: 768px) {
+    section ul {
+      flex-direction: column; /* Los enlaces se apilan verticalmente en pantallas pequeñas */
+      align-items: center; /* Centra los enlaces en pantallas pequeñas */
+    }
+  
+    section ul li {
+      font-size: 14px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
+  }
+  
+
 @media (max-width: 610px) {
     #redes {
         display: flex;

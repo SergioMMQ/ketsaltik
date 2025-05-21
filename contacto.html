@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto | Ketzaltik</title>
+  <title>Contacto | Ketsaltik</title>
+  
+  <!-- SEO básico -->
+  <meta name="description" content="Formulario de contacto de Ketsaltik. Escríbenos para eventos, clases, cotizaciones y más.">
+  <meta name="keywords" content="contacto, maquillaje infantil, eventos, clases, talleres, Ketsaltik">
+  <meta name="author" content="Ketsaltik">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://www.ketsaltik.com/img/icon.jpg">
+
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -66,6 +75,10 @@
       align-items: center;
     }
 
+    .contact-preference label {
+      font-weight: normal;
+    }
+
     .contacto-discreto button {
       margin-top: 1rem;
       padding: 0.9rem;
@@ -100,15 +113,16 @@
   <main>
     <section class="contacto-discreto">
       <h3>Envíanos un mensaje</h3>
-      <form action="https://formsubmit.co/quetzal.mq97@gmail.com" method="POST">
+      <form action="https://formsubmit.co/quetzal.mq97@gmail.com" method="POST" aria-label="Formulario de contacto">
+        
         <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre" />
+        <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre" autocomplete="name" />
 
         <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico" />
+        <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico" autocomplete="email" />
 
         <label for="phone">Teléfono:</label>
-        <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono" />
+        <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono" autocomplete="tel" />
 
         <label for="subject">Tema:</label>
         <select id="subject" name="subject" required>
@@ -124,14 +138,15 @@
         </select>
 
         <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" rows="4" required placeholder="Escribe tu mensaje aquí"></textarea>
+        <textarea id="message" name="message" rows="4" required placeholder="Escribe tu mensaje aquí" autocomplete="off"></textarea>
 
         <label>Preferencia de contacto:</label>
-        <div class="contact-preference">
+        <div class="contact-preference" role="radiogroup" aria-labelledby="preferencia-contacto">
           <label><input type="radio" name="contact-preference" value="email" required> Email</label>
           <label><input type="radio" name="contact-preference" value="phone"> Teléfono</label>
         </div>
 
+        <!-- Redirección y configuración de FormSubmit -->
         <input type="hidden" name="_next" value="gracias.html" />
         <input type="hidden" name="_captcha" value="false" />
 
@@ -141,7 +156,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Ketzaltik. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Ketsaltik. Todos los derechos reservados.</p>
   </footer>
 
 </body>

@@ -16,6 +16,13 @@
   </url>
 
   <url>
+    <loc>https://www.ketsaltik.com/blog/maquillaje-infantil-2025.html</loc>
+    <lastmod>2025-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
     <loc>https://www.ketsaltik.com/eventos/eventos.html</loc>
     <lastmod>2025-05-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -28,7 +35,5 @@
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
-
-  <!-- Agrega más URLs según sea necesario -->
 
 </urlset>

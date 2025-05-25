@@ -417,3 +417,25 @@ section {
         align-items: center; /* Centra los elementos dentro de la columna */
     }
 }
+
+.botones-navegacion {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  background-color: #f8f8f8;
+}
+
+.btn {
+  background-color: #ffa56a;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #fd8433;
+}
+/* Estilos para el botón de "Volver arriba" */

@@ -43,8 +43,8 @@
   <!-- Estilos -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="stylesheet" href="https://www.ketsaltik.com/popup-quetzal/popup.css" />
-  <script src="https://www.ketsaltik.com/popup-quetzal/popup.js" defer></script>
+  <link rel="stylesheet" href="popup-quetzal/popup.css" />
+  <script src="popup-quetzal/popup.js" defer></script>
 
   <!-- Datos estructurados -->
   <script type="application/ld+json">
@@ -76,11 +76,16 @@
 
 <body>
   <header>
-    <div class="header-content">
-      <a href="https://www.facebook.com/profile.php?id=100085005052825&mibextid=LQQJ4d" aria-label="Facebook Ketsaltik">
-        <img src="https://www.ketsaltik.com/img/icon.jpg" alt="Logo de Ketsaltik" class="logo" />
+    <div class="header-content e-card playing">
+      <div class="image"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+
+      <a href="https://www.facebook.com/profile.php?id=100085005052825&mibextid=LQQJ4d" aria-label="Facebook Ketsaltik" style="position: relative;">
+        <img src="https://www.ketsaltik.com/img/icon.jpg" alt="Logo circular de Ketsaltik - arte en maquillaje y body paint" class="logo" />
       </a>
-      <div class="header-text">
+      <div class="header-text" style="position: relative;">
         <h1>Ketsaltik</h1>
         <h2>Diseño Artístico & Body Paint</h2>
         <p>Explora diseños únicos para eventos, fotografía, clases y más.</p>
@@ -142,6 +147,9 @@
       title="Pie de página Ketsaltik"
       role="contentinfo"
       loading="lazy"
+      width="100%"
+      style="border:none; overflow:hidden;" 
+      scrolling="si"
     ></iframe>
   </footer>
 

@@ -130,13 +130,24 @@
         </div>
     </section>
 
-    <!-- Imagen ampliada -->
-    <div id="image-popup" class="image-popup">
-        <span class="close" onclick="closeImage()">&times;</span>
-        <img id="popup-image" src="" alt="Imagen ampliada">
+        <!-- Contenedor para mostrar la imagen en pantalla completa -->
+    <div id="fullscreenContainer" class="fullscreen-container" onclick="closeFullscreen()">
+        <img id="fullscreenImage" src="" alt="Fullscreen Image">
     </div>
 
-    <script src="/popup-quetzal/popup.js"></script>
-    <script src="script.js"></script>
+    <div class="sidebar-wh" id="sidebarwh">
+        <a href="https://wa.me/+525625332829?text=¡Hola!%20Estoy%20interesado%20en%20sus%20servicios." target="_blank">
+            <img src="/img/whatsapp.png" alt="">
+        </a>
+    </div>
+
+    <!-- Contenedor para la imagen en pantalla completa -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="">
+    </div>
+
+    <iframe class="footer" src="/footer.html" frameborder="0"></iframe>
+    <script src="portafolios.js"></script>
 </body>
 </html>

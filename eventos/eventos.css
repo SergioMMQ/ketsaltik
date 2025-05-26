@@ -225,6 +225,10 @@ section h2 {
     background-color: #f9f9f9;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
+    .footer {
+        height: 280px !important;
+        
+    }
 
 
 @media (max-width: 768px) {
@@ -250,6 +254,18 @@ section h2 {
 
     .navbar {
         justify-content: space-between;
+    }
+        .footer {
+        height: 350px !important;
+        
+    }
+}
+
+@media (max-width: 600px) {
+
+    .footer {
+        height: 420px !important;
+        
     }
 }
 

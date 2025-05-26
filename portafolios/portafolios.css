@@ -24,7 +24,7 @@ body, html {
 
 .footer{
     width: 100% !important;
-    height: 360px !important;
+    height: 280px !important;
 }
 
 header {
@@ -493,6 +493,14 @@ footer a:hover {
     .navbar {
         justify-content: space-between;
     }
+    .footer {
+        height: 350px !important;
+        
+    }
+}
+
+@media (max-width: 600px) {
+
     .footer {
         height: 400px !important;
         

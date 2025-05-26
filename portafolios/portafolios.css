@@ -469,7 +469,7 @@ footer a:hover {
     text-align: justify; /* Justifica el texto */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .menu-links {
         display: none;
         flex-direction: column;
@@ -492,5 +492,9 @@ footer a:hover {
 
     .navbar {
         justify-content: space-between;
+    }
+    .footer {
+        height: 400px !important;
+        
     }
 }

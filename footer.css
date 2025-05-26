@@ -1,48 +1,18 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    color: #151515;
-    background-color: #f1bda2;
-}
-
 footer {
-    background-color: #f19669;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
-footer a {
-    display: block; 
-    text-align: center; 
-    padding: 15px; 
-    background-color: #f2820210; 
-    color: #ffffff; 
-    border-radius: 8px;
-    text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-    margin: 10px auto;
-    width: 200px;
-}
-
-footer a p {
-    margin: 0;
-    font-size: 1.1em;
-    font-weight: bold;
-}
-
-footer a:hover {
-    background-color: #156800; 
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
-}
-
-#contacto {
+    padding-top: 10px;
     background-color: #f1bda2;
-    padding: 20px;
+    /* padding: 20px;    */
     text-align: center;
+    font-family: Arial, sans-serif;
+}
+footer h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+#redes {
+    background-color: #f1bda2;
 }
 
 .redes-sociales {
@@ -59,18 +29,53 @@ footer a:hover {
     transition: color 0.3s;
 }
 
-#redes {
-    background-color: #f1bda2;
-    padding: 20px;
-    text-align: center;
-}
-
 .redes-sociales a:hover {
     color: #07b3ec;
 }
 
 .redes-sociales i {
     margin-right: 10px;
+}
+
+#enlaces {
+    padding: 10px 0 0 0;
+}
+
+.footer-info {
+    padding: 10px 0;
+    background-color: #f19669;
+}
+
+.footer-info a {
+    display: block; 
+    text-align: center; 
+    padding: 15px; 
+    background-color: #f2820210; 
+    color: #ffffff; 
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px auto;
+    width: 200px;
+}
+
+.footer-info a p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.footer-info a:hover {
+    background-color: #156800; 
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+#contacto {
+    background-color: #f1bda2;
+    /* padding: 20px; */
+    text-align: center;
 }
 
 .enlace {
@@ -142,11 +147,11 @@ section ul {
         gap: 5;
     }
 
-    footer a {
+    .footer-info a {
         width: 150px;
     }
 
-    footer a p {
+    .footer-info a p {
         font-size: .8em;
     }
 }

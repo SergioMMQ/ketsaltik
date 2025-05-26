@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sergiommq.github.io/portafoliofacepainting/sitemap.xml
+Sitemap: https://www.ketsaltik.com/sitemap.xml

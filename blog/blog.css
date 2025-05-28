@@ -8,14 +8,15 @@ body {
 }
 
 .blog-header {
-    background-color: #eecdbb;
+    /* background-color: #f19669; */
+    background: radial-gradient(circle, #f19669, #f7bca2);
     padding: 2rem 1rem;
     text-align: center;
 }
 
 .blog-header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #412f0a;
 }
 
@@ -37,7 +38,7 @@ body {
     margin-bottom: 2rem;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.05);
 }
 
 .entrada-blog h2 {
@@ -56,7 +57,7 @@ body {
     display: inline-block;
     margin-top: 1rem;
     color: #fff;
-    background-color: #61b1ab;
+    background-color: #45ccc1;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     text-decoration: none;
@@ -64,7 +65,7 @@ body {
 }
 
 .leer-mas:hover {
-    background-color: #61b1ab;
+    background-color: #00ffee;
 }
 
 .regresar {
@@ -87,11 +88,13 @@ body {
 .botones-navegacion {
   display: flex;
   justify-content: flex-end;
+  margin: 10px;
   gap: 20px;
   background-color: #f8f8f8;
 }
 
 .btn {
+    margin-right: 5%;
   background-color: #ffa56a;
   color: white;
   text-decoration: none;

@@ -172,7 +172,7 @@ header {
   text-align: justify;
 }
 
-section {
+.eventos{
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -616,11 +616,7 @@ button .span-mother2 span:nth-child(6) {
     flex-direction: column; /* Los elementos se apilan en una sola columna en pantallas pequeñas */
     align-items: center; /* Centra los elementos dentro de la columna */
   }
-  .footer {
-    width: 100% !important;
-    height: 430px !important;
-    margin: 0px;
-  }
+
   .botones-navegacion {
     justify-content: center;
   }

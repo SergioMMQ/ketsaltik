@@ -154,5 +154,18 @@
   <footer class="regresar">
     <a href="/" class="icono-regreso"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
   </footer>
+
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("/footer.html")
+      .then(res => {
+        if (!res.ok) throw new Error("No se pudo cargar el footer");
+        return res.text();
+      })
+      .then(html => {
+        document.getElementById("footer-placeholder").innerHTML = html;
+      })
+      .catch(error => console.error("Error al cargar el footer:", error));
+  </script>
 </body>
 </html>

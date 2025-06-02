@@ -201,11 +201,7 @@ section h2 {
     text-align: center;
 }
 
-#contacto {
-    background-color: #b9b7b7;
-    padding: 20px;
-    text-align: center;
-}
+
 
 form {
     max-width: 400px;
@@ -396,37 +392,6 @@ footer {
 }
 
 
-
-/* Estilo general para el contenedor del enlace */
-footer a {
-    display: block; /* Hace que el enlace ocupe todo el área del contenedor */
-    text-align: center; /* Centra el contenido */
-    padding: 15px; /* Espacio interno */
-    background-color: #18191a; /* Color de fondo */
-    color: #ffffff; /* Color del texto */
-    border-radius: 8px; /* Bordes redondeados */
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
-    margin: 10px auto; /* Centra el enlace y añade margen */
-    width: 300px; /* Ancho fijo */
-}
-
-/* Estilo para el texto del enlace */
-footer a p {
-    margin: 0; /* Elimina los márgenes */
-    font-size: 1.1em; /* Tamaño de fuente */
-    font-weight: bold; /* Texto en negrita */
-}
-
-/* Efecto hover */
-footer a:hover {
-    background-color: #0066cc; /* Cambia el color de fondo al pasar el cursor */
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
-}
-
-
 /* precio */
 .sidebar-price {
     position: fixed;
@@ -493,16 +458,16 @@ footer a:hover {
     .navbar {
         justify-content: space-between;
     }
-    .footer {
+    /* .footer {
         height: 350px !important;
         
-    }
+    } */
 }
 
 @media (max-width: 600px) {
 
-    .footer {
+    /* .footer {
         height: 400px !important;
         
-    }
+    } */
 }

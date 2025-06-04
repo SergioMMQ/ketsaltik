@@ -68,11 +68,6 @@ body {
     background-color: #00ffee;
 }
 
-.regresar {
-    text-align: center;
-    padding: 2rem;
-}
-
 .icono-regreso {
     text-decoration: none;
     color: #cc0066;
@@ -108,3 +103,52 @@ body {
   background-color: #fd8433;
 }
 /* Estilos para el botón de "Volver arriba" */
+
+  .buscador-blog {
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .buscador-blog input {
+    padding: 0.75rem 1rem;
+    width: 90%;
+    max-width: 500px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+
+  .buscador-blog input:focus {
+    outline: none;
+    border-color: #ff7eb3;
+    box-shadow: 0 0 8px rgba(255,126,179,0.4);
+  }
+
+  /* Para cuando no hay coincidencias */
+  .no-result {
+    text-align: center;
+    color: #777;
+    margin-top: 2rem;
+    font-style: italic;
+  }
+
+  .entrada-blog {
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.entrada-blog.hidden {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.resaltado {
+  background-color: yellow;
+  font-weight: bold;
+}

@@ -85,6 +85,7 @@
     </script>
     
 </head>
+
 <body>
   <header class="blog-header">
     <h1>Ketzaltik</h1>
@@ -95,6 +96,11 @@
     <a href="/" class="btn">Inicio</a>
     <!-- <a href="/blog/blog.html" class="btn">Blog</a> -->
   </nav>
+  
+<div class="buscador-blog">
+  <input type="text" id="searchInput" placeholder="🔍 Buscar artículos del blog..." />
+</div>
+  
   <main class="blog-contenido">
 
     <!-- Entrada 1 -->
@@ -151,21 +157,72 @@
   
   </main>  
 
-  <footer class="regresar">
-    <a href="/" class="icono-regreso"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
+  <footer>
+    <div id="footer-placeholder"></div>
+    <noscript>
+      <p>&copy; 2025 Ketzaltik. <a href="/contacto.html">Contacto</a></p>
+    </noscript>
+    <script>
+      fetch("/footer.html")
+        .then(res => {
+          if (!res.ok) throw new Error("No se pudo cargar el footer");
+          return res.text();
+        })
+        .then(html => {
+          document.getElementById("footer-placeholder").innerHTML = html;
+        })
+        .catch(error => console.error("Error al cargar el footer:", error));
+    </script>
   </footer>
 
-  <div id="footer-placeholder"></div>
-  <script>
-    fetch("/footer.html")
-      .then(res => {
-        if (!res.ok) throw new Error("No se pudo cargar el footer");
-        return res.text();
-      })
-      .then(html => {
-        document.getElementById("footer-placeholder").innerHTML = html;
-      })
-      .catch(error => console.error("Error al cargar el footer:", error));
-  </script>
 </body>
+
+<script>
+  const input = document.getElementById("searchInput");
+  const articles = document.querySelectorAll(".entrada-blog");
+
+  const noResult = document.createElement("div");
+  noResult.classList.add("no-result");
+  noResult.textContent = "No se encontraron artículos que coincidan.";
+  noResult.style.display = "none";
+  document.querySelector("main.blog-contenido").appendChild(noResult);
+
+  function resaltar(text, query) {
+    const regex = new RegExp(`(${query})`, "gi");
+    return text.replace(regex, "<span class='resaltado'>$1</span>");
+  }
+
+  input.addEventListener("input", () => {
+    const query = input.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    articles.forEach(article => {
+      const h2 = article.querySelector("h2");
+      const p = article.querySelector("p");
+
+      // Restaurar texto original
+      h2.innerHTML = h2.textContent;
+      p.innerHTML = p.textContent;
+
+      const title = h2.textContent.toLowerCase();
+      const desc = p.textContent.toLowerCase();
+      const matches = title.includes(query) || desc.includes(query);
+
+      if (query && matches) {
+        h2.innerHTML = resaltar(h2.textContent, query);
+        p.innerHTML = resaltar(p.textContent, query);
+      }
+
+      if (matches) {
+        article.classList.remove("hidden");
+        visibleCount++;
+      } else {
+        article.classList.add("hidden");
+      }
+    });
+
+    noResult.style.display = (query && visibleCount === 0) ? "block" : "none";
+  });
+</script>
+
 </html>

@@ -624,9 +624,10 @@ button .span-mother2 span:nth-child(6) {
 }
 
 @media (max-width: 768px) {
+
   .botones-categorias {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: stretch;
   }
   section {
@@ -637,4 +638,71 @@ button .span-mother2 span:nth-child(6) {
   .botones-navegacion {
     justify-content: center;
   }
+}
+
+.card {
+  width: 190px;
+  height: 254px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 0px #989897;
+  transition: background 1s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.card .card-border-top {
+  width: 60%;
+  height: 3%;
+  background: #c6c4f0;
+  margin: auto;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.card span {
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.card .img {
+  width: 70px;
+  height: 80px;
+  background: #c6c4f0;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+.card a {
+  text-decoration: none;
+  width: fit-content;
+  padding: 8px 25px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  border: none;
+  margin-top: 30px;
+  background: #c6c4f0;
+  color: white;
+  font-weight: 600;
+  transition: margin-top 0.5s ease;
+}
+
+.card:hover .img {
+  opacity: 0;
+}
+
+.card:hover a {
+  margin-top: 80px;
+}
+
+.card a:hover {
+  background: #534bf3;
 }

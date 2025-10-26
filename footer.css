@@ -134,6 +134,10 @@ section ul {
       padding: 10px 5px;
     }
 
+    .texto-footer {
+        display: none;
+    }
+
   }
   
 
@@ -159,4 +163,9 @@ section ul {
     .footer-info a p {
         font-size: .8em;
     }
+
+    .texto-footer {
+        display: none;
+    }
+
 }

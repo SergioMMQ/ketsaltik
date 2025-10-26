@@ -608,8 +608,20 @@ button .span-mother2 span:nth-child(6) {
     gap: 5;
   }
   .informacion-bodypaint {
+    width: 80%;
     padding: 15px;
+    font-size: 14px;
+    margin: 15px;
   }
+
+  .informacion-bodypaint h2{
+    font-size: 1em;  
+  }
+
+  .informacion-bodypaint p{
+    font-size: 0.9em;  
+  }
+
   .footer {
     width: 100% !important;
     height: 470px !important;
@@ -621,15 +633,21 @@ button .span-mother2 span:nth-child(6) {
     justify-content: center;
     gap: 20px;
   }
+
+  .botones-categorias {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: auto;
+    height: 200px;
+  }
 }
 
 @media (max-width: 768px) {
 
-  .botones-categorias {
-    display: flex;
-    /* flex-direction: column; */
-    align-items: stretch;
-  }
+
   section {
     flex-direction: column; /* Los elementos se apilan en una sola columna en pantallas pequeñas */
     align-items: center; /* Centra los elementos dentro de la columna */
@@ -637,6 +655,24 @@ button .span-mother2 span:nth-child(6) {
 
   .botones-navegacion {
     justify-content: center;
+  }
+
+  .header-text p{
+    display: none;
+  }
+
+  .header-text h2{
+    font-size: 1em;
+  }
+
+    .botones-categorias {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    height: 200px;
   }
 }
 
@@ -706,3 +742,4 @@ button .span-mother2 span:nth-child(6) {
 .card a:hover {
   background: #534bf3;
 }
+
